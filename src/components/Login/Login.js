@@ -62,7 +62,6 @@ const Login = (props) => {
 
   const passwordChangeHandler = (event) => {
     dispatchPassword({ type: "USER_INPUT_PASSWORD", val: event.target.value });
-    console.log(passwordState.value);
     // setEnteredPassword(event.target.value);
 
     setFormIsValid(emailState.isValid && passwordState.isValid);
